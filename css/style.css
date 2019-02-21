@@ -13,7 +13,7 @@ html {
 
 body {
   text-align: center;
-  background-color: #97e7ca;
+  background-color: #225945;
   min-width: 200px;
 }
 
@@ -22,8 +22,17 @@ h1, h2, h3 {
 }
 
 footer {
-  background: #44b68d;
+  background: #225945;
+  color: white;
   padding: 2em;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:visited {
+  color: white;
 }
 
 img {
@@ -34,6 +43,8 @@ img {
 
 p {
   text-align: justify;
+  text-align-last: center;
+  color: #171717;
 }
 
 #header {
@@ -69,6 +80,7 @@ p {
   font-weight: lighter;
   font-size: 20px;
   letter-spacing: 1px;
+  color: white;
 }
 
 #about-main {
@@ -84,6 +96,14 @@ p {
   height: 400px;
 }
 
+#about-main .section-header {
+  color: white;
+}
+
+#about-main p {
+  color: white;
+}
+
 #about-sec {
   display: inline-block;
   padding: 2em;
@@ -93,6 +113,15 @@ p {
   min-width: 100%;
   max-width: 100%;
   height: 315px;
+  border: none;
+}
+
+#about-sec .section-header {
+  color: white;
+}
+
+#about-sec p {
+  color: white;
 }
 
 #contact-main {
@@ -109,7 +138,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #44b68d;
+  background-color: #225945;
 }
 
 .menu {
@@ -126,7 +155,7 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-bottom: 1px solid #97e7ca;
+  border-bottom: 1px solid white;
 }
 
 .main-nav a:visited {
@@ -174,10 +203,11 @@ label {
 
 .card-title {
   text-transform: uppercase;
+  margin-top: 5px;
   margin-bottom: 5px;
   font-size: 20px;
   letter-spacing: 1px;
-  color: #333;
+  color: #225945;
 }
 
 .card-content {
@@ -186,8 +216,16 @@ label {
   margin-right: auto;
 }
 
-.card-content img {
+.card-content a {
+  color: #225945;
+}
 
+.card-content a:visited {
+  color: #225945;
+}
+
+.section-header {
+  color: #225945;
 }
 
 /* Image Stylings */
@@ -195,6 +233,12 @@ label {
 #portfolio-main {
   background-color: #f2f2f2;
   padding: 2em 0 2em 0;
+}
+
+.content-wrap img {
+  display: inline-block;
+  width: 300px;
+  padding-top: 19em;
 }
 
 .port-img {
