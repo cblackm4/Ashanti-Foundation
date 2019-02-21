@@ -118,6 +118,7 @@ p {
 }
 
 .main-nav a {
+ clear: right;
   display: block;
   padding: 0.5em;
   font-weight: bold;
