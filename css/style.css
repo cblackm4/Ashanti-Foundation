@@ -120,12 +120,13 @@ p {
 .main-nav a {
  clear: right;
   display: block;
-  padding: 0.5em;
+  padding: 1em;
   font-weight: bold;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  border-bottom: 1px solid #97e7ca;
 }
 
 .main-nav a:visited {
