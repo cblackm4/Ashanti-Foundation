@@ -84,7 +84,7 @@ p {
   font-size: 18px;
   letter-spacing: 1px;
   color: white;
-  padding: 0;
+  white-space: nowrap;
 }
 
 #about-main {
