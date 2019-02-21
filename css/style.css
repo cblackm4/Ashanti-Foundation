@@ -8,7 +8,7 @@ html, body {
   vertical-align: baseline;
 }
 html {
-  font-family: sans-serif;
+  font-family: 'Montserrat', serif;
 }
 
 body {
@@ -45,6 +45,7 @@ p {
   text-align: justify;
   text-align-last: center;
   color: #171717;
+
 }
 
 #header {
