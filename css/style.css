@@ -32,6 +32,10 @@ img {
   height: auto;
 }
 
+p {
+  text-align: justify;
+}
+
 #header {
   min-height: 450px;
   text-align: center;
@@ -85,9 +89,19 @@ img {
   padding: 2em;
 }
 
+#about-sec iframe {
+  min-width: 100%;
+  max-width: 100%;
+  height: 315px;
+}
+
 #contact-main {
   display: inline-block;
   padding: 2em;
+}
+
+.contact-wrapper {
+  background-color: white;
 }
 
 /* Nav Stylings */
@@ -125,17 +139,21 @@ img {
   text-decoration: underline;
 }
 
+.section-header {
+  text-align: center;
+}
+
 /* Card Stylings */
 
 .card-wrapper {
   background-color: #f2f2f2;
-  border-top: 1px dashed #333;
-  border-bottom: 1px dashed #333;
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white;
 }
 
 .card {
   margin: 50px auto 50px auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 .card-title {
@@ -144,22 +162,12 @@ img {
   font-size: 20px;
   letter-spacing: 1px;
   color: #333;
-  text-decoration: underline;
 }
 
 .card-content {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
-}
-
-.service-info {
-  background: url("../images/placeholder-icon.png");
-  background-size: 96px 96px;
-  background-repeat: no-repeat;
-  padding-left: 100px;
-  height: 100px;
 }
 
 .card-content img {
@@ -172,6 +180,7 @@ img {
   background-color: #f2f2f2;
   padding: 2em 0 2em 0;
 }
+
 .port-img {
   max-width: 250px;
   display: block;
