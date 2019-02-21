@@ -105,42 +105,56 @@ p {
 }
 
 /* Nav Stylings */
-#main-nav {
+.main-nav {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #44b68d;
 }
 
-#main-nav ul {
-  list-style-type: none;
-  text-align: left;
+.menu {
   width: 100%;
+  display: none;
 }
 
-#main-nav li {
-  display: inline-block;
+.main-nav a {
+  display: block;
   padding: 0.5em;
   font-weight: bold;
-}
-
-#main-nav li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-#main-nav li a:visited {
+.main-nav a:visited {
   color: white;
 }
 
-#main-nav li a:hover {
+.main-nav a:hover {
   text-decoration: underline;
 }
 
 .section-header {
   text-align: center;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  text-align: right;
+  color: white;
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu {
+  display: block;
 }
 
 /* Card Stylings */
@@ -171,7 +185,7 @@ p {
 }
 
 .card-content img {
-  
+
 }
 
 /* Image Stylings */
