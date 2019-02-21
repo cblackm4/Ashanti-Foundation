@@ -46,7 +46,6 @@ p {
   text-align-last: center;
   color: #171717;
   font-size: 16px;
-
 }
 
 #header {
@@ -202,7 +201,8 @@ label {
 
 .card {
   margin: 50px auto 50px auto;
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .card-title {
