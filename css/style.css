@@ -75,15 +75,16 @@ p {
 
 /* Main Content Styling */
 #main-content {
-  padding: 1em;
+  padding: 2em;
 }
 
 #content-tag {
   font-family: sans-serif;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   color: white;
+  padding: 0;
 }
 
 #about-main {
