@@ -129,14 +129,17 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .main-nav a:visited {
   color: white;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .main-nav a:hover {
   text-decoration: underline;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .section-header {
@@ -151,6 +154,7 @@ label {
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #toggle {
@@ -160,6 +164,7 @@ label {
 
 #toggle:checked + .menu {
   display: block;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Card Stylings */
