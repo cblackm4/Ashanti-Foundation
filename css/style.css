@@ -126,6 +126,8 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
 .main-nav a:visited {
