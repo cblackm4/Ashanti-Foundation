@@ -110,6 +110,8 @@ p {
   top: 0;
   width: 100%;
   background-color: #44b68d;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu {
@@ -127,7 +129,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 2px;
 
-  -webkit-tap-highlight-color: transparent;
+
 }
 
 .main-nav a:visited {
