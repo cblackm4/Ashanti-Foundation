@@ -147,6 +147,7 @@ p {
 .menu {
   width: 100%;
   display: none;
+  background-color: white;
 }
 
 .main-nav a {
@@ -154,15 +155,15 @@ p {
   display: block;
   padding: 1em;
   font-weight: bold;
-  color: white;
+  color: #225945;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #225945;
 }
 
 .main-nav a:visited {
-  color: white;
+  color: #225945;
 }
 
 .main-nav a:hover {
@@ -243,7 +244,8 @@ label {
   display: inline-block;
   float: left;
   width: 115px;
-  padding: 1em;
+  padding-left: 1em;
+  padding-top: 0.7em;
   vertical-align: middle;
 }
 
