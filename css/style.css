@@ -239,6 +239,14 @@ label {
   padding: 2em 0 2em 0;
 }
 
+.main-nav img {
+  display: inline-block;
+  float: left;
+  width: 115px;
+  padding: 1em;
+  vertical-align: middle;
+}
+
 .content-wrap img {
   display: inline-block;
   width: 300px;
