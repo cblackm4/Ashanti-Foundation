@@ -49,7 +49,7 @@ p {
 }
 
 #header {
-  min-height: 450px;
+  min-height: 500px;
   text-align: center;
 }
 
@@ -68,13 +68,13 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 450px;
+  height: 500px;
   z-index: -1;
 }
 
 /* Main Content Styling */
 #main-content {
-  padding: 2em;
+  padding: .89em;
 }
 
 #content-tag {
@@ -137,11 +137,20 @@ p {
 }
 
 /* Nav Stylings */
-.main-nav {
+#nav {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #225945;
+}
+
+#nav img {
+  display: inline-block;
+  float: left;
+  width: 115px;
+  padding-left: 1em;
+  padding-top: 0.7em;
+  vertical-align: middle;
 }
 
 .menu {
@@ -150,8 +159,8 @@ p {
   background-color: white;
 }
 
-.main-nav a {
- clear: right;
+#nav a {
+  clear: right;
   display: block;
   padding: 1em;
   font-weight: bold;
@@ -162,11 +171,11 @@ p {
   border-bottom: 1px solid #225945;
 }
 
-.main-nav a:visited {
+#nav a:visited {
   color: #225945;
 }
 
-.main-nav a:hover {
+#nav a:hover {
   text-decoration: underline;
 }
 
@@ -186,6 +195,7 @@ label {
 
 #toggle {
   display: none;
+
 }
 
 #toggle:checked + .menu {
@@ -240,16 +250,7 @@ label {
   padding: 2em 0 2em 0;
 }
 
-.main-nav img {
-  display: inline-block;
-  float: left;
-  width: 115px;
-  padding-left: 1em;
-  padding-top: 0.7em;
-  vertical-align: middle;
-}
-
-.content-wrap img {
+.image-wrap img {
   display: inline-block;
   width: 300px;
   padding-top: 19em;
@@ -279,9 +280,68 @@ label {
 /* Media Query */
 @media (min-width: 780px) {
   body {
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr;
+  }
+
+  .content-wrap, .contact-wrapper, .about-wrapper {
+    grid-column: 2/4;
+  }
+
+  .content-wrap img {
+    width: 400px;
+  }
+
+  .menu {
+    display: block;
+    background-color: #225945;
+    height: auto;
+    grid-column: 2/4;
+  }
+
+  #nav a {
+    float: right;
+    display: inline-block;
+    clear: none;
+    color: white;
+    border-bottom: none;
+  }
+
+  #nav {
+    padding: .6em;
+  }
+
+  #nav img {
     display: none;
   }
-  .card img {
-    float: none;
+
+  #nav label {
+    display: none;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  #content-cards {
+    width: 100%;
+    background-color: white;
+  }
+
+  .card-wrapper {
+    grid-column: 2/4;
+    display: flex;
+  }
+
+  .card {
+    justify-content: space-around;
+  }
+
+
+  #content-cards .card {
+    width: 31%;
   }
 }
