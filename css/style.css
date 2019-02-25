@@ -86,12 +86,11 @@ p {
   white-space: nowrap;
 }
 
-#about-main {
-  display: inline-block;
-  padding: 2em;
+#about {
+  
 }
 
-#about-main .about-image {
+.about-image {
   background: url("../images/ashanti-about.png");
   background-size: 300px 480px;
   background-repeat: no-repeat;
@@ -99,20 +98,15 @@ p {
   height: 400px;
 }
 
-#about-main .section-header {
+#about .section-header {
   color: white;
 }
 
-#about-main p {
+#about p {
   color: white;
 }
 
-#about-sec {
-  display: inline-block;
-  padding: 2em;
-}
-
-#about-sec iframe {
+#about iframe {
   min-width: 100%;
   max-width: 100%;
   height: 315px;
@@ -287,14 +281,40 @@ label {
     grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr;
   }
 
-  .content-wrap, .contact-wrapper, .about-wrapper {
+  .content-wrap, .contact-wrapper {
     grid-column: 2/4;
+  }
+
+  .about-wrapper, .card-wrapper {
+    grid-column: 2/4;
+    display: flex;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 49%;
+    padding: 2em;
+    justify-content: space-around;
+  }
+
+  #content-cards {
+    width: 100%;
+    background-color: white;
+  }
+
+  .card {
+    width: 31%;
+    justify-content: space-around;
   }
 
   .content-wrap img {
     width: 400px;
   }
 
+/* Nav Stylings Desktop */
   .menu {
     display: block;
     background-color: #225945;
@@ -324,24 +344,5 @@ label {
 
   #toggle {
     display: none;
-  }
-
-  #content-cards {
-    width: 100%;
-    background-color: white;
-  }
-
-  .card-wrapper {
-    grid-column: 2/4;
-    display: flex;
-  }
-
-  .card {
-    justify-content: space-around;
-  }
-
-
-  #content-cards .card {
-    width: 31%;
   }
 }
