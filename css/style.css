@@ -87,7 +87,8 @@ p {
 }
 
 #about {
-  
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .about-image {
@@ -292,6 +293,8 @@ label {
 
   #about {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .about-content {
