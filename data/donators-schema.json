@@ -1,0 +1,27 @@
+{
+  "$schema": "http://nova.umuc.edu/~ct488a13/finalproject/",
+  "title": "Donators",
+  "description": "A list of donators who have contributed to the causes The Ashanti Foundation supports",
+  "type": "array",
+
+  "properties": {
+    "name": {
+      "description": "Name of the person who provided the donation",
+      "type": "string"
+    },
+    "contribution": {
+      "description": "The amount of money that was donated",
+      "type": "number"
+    },
+    "organization": {
+      "description": "The organization the donator belongs to, if provided",
+      "type": "string"
+    },
+    "date": {
+      "description": "The date the donation was made",
+      "type": "object"
+    }
+  },
+
+  "required": ["name", "contribution", "date"]
+}

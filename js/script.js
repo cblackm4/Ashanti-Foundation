@@ -1,12 +1,24 @@
+$(document).ready(function () {
 
-// Menu JS to close menu after clicking a link
-var menu = document.getElementById("nav");
-var cbox = document.getElementById("toggle");
+  // Click function to close mobile hamburger menu after clicking link
+  $("#nav-wrap a").click(function(){
+     $("#toggle").prop("checked", false);
+  });
 
-menu.addEventListener('click', menuClick);
+  // Toggle hamburger icon with an X while menu is open
+  $('#toggle').click(function(){
+    if ($("#toggle").prop("checked") == true) {
+      $(".hamburger").html("X");
+    } else {
+      $(".hamburger").html("&#9776");
+    }
+  });
 
-function menuClick(event) {
-  if (event.target instanceof HTMLAnchorElement) {
-    cbox.checked = false;
-  }
-}
+  // Animate images
+  $(".card-image").hover(function(){
+    $(this).addClass('hover-image');
+  }, function() {
+    $(this).removeClass("hover-image");
+  });
+
+});

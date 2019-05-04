@@ -21,24 +21,9 @@ h1, h2, h3 {
   margin: 0;
 }
 
-footer {
-  background: #225945;
-  color: white;
-  padding: 2em;
-}
-
-footer a {
-  color: white;
-}
-
-footer a:visited {
-  color: white;
-}
-
 img {
-  display: block;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 p {
@@ -73,7 +58,8 @@ p {
 }
 
 /* Main Content Styling */
-#main-content {
+#tag-content {
+  width: 100%;
   padding: .89em;
 }
 
@@ -127,8 +113,40 @@ p {
   padding: 2em;
 }
 
+#contact-main a {
+  color: #225945;
+}
+
 .contact-wrapper {
   background-color: white;
+}
+
+.content {
+  width: 100%;
+  background-color: white;
+}
+
+.content-header {
+  margin: 10px auto 10px auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.content-para {
+  margin: 25px auto 50px auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align-last: left;
+}
+
+#donors {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Nav Stylings */
@@ -144,7 +162,7 @@ p {
   float: left;
   width: 115px;
   padding-left: 1em;
-  padding-top: 0.7em;
+  padding-top: 1em;
   vertical-align: middle;
 }
 
@@ -154,7 +172,7 @@ p {
   background-color: white;
 }
 
-#nav a {
+#nav a, #nav a:focus {
   clear: right;
   display: block;
   padding: 1em;
@@ -166,12 +184,13 @@ p {
   border-bottom: 1px solid #225945;
 }
 
-#nav a:visited {
-  color: #225945;
+#nav a:hover {
+  text-decoration: none;
+  opacity: 0.7;
 }
 
-#nav a:hover {
-  text-decoration: underline;
+#nav a:visited {
+  color: #225945;
 }
 
 .section-header {
@@ -199,16 +218,21 @@ label {
 
 /* Card Stylings */
 
-.card-wrapper {
+.content-wrapper {
   background-color: #f2f2f2;
   border-top: 1px dashed white;
   border-bottom: 1px dashed white;
 }
 
+.dono-image {
+  width: 150px;
+  margin: 0;
+  vertical-align: middle;
+}
+
 .card {
-  margin: 50px auto 50px auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 2em 2em 2em 2em;
+  flex-grow: 1;
 }
 
 .card-title {
@@ -226,6 +250,10 @@ label {
   margin-right: auto;
 }
 
+.card-content p {
+  text-align-last: left;
+}
+
 .card-content a {
   color: #225945;
 }
@@ -236,6 +264,14 @@ label {
 
 .section-header {
   color: #225945;
+}
+
+.hover-image {
+  opacity: 0.7;
+}
+
+.about-content p {
+  text-align-last: left;
 }
 
 /* Image Stylings */
@@ -251,25 +287,56 @@ label {
   padding-top: 19em;
 }
 
-.port-img {
-  max-width: 250px;
-  display: block;
-  margin:auto;
-  padding-top: 70px;
-}
-.image-box-grey {
-  float: left;
+#content {
   width: 100%;
-  height: auto;
-  background-color: #333;
-  padding-bottom: 70px;
+  background-color: white;
 }
-.image-box-white {
-  float: left;
-  width: 100%;
-  height: auto;
-  background-color: #f2f2f2;
-  padding-bottom: 70px;
+
+/* Footer Styling */
+
+footer {
+  text-align: center;
+  background: #225945;
+  color: white;
+  padding: 2em;
+}
+
+footer div {
+  grid-column: 2/4;
+}
+
+footer a {
+  color: white;
+}
+
+a:hover {
+  color white;
+}
+
+footer a:visited {
+  color: white;
+}
+
+#social-foot {
+  padding: 0, 1em, 1em, 0;
+}
+
+#social-foot a {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-linkedin, .fa-youtube {
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
 }
 
 /* Media Query */
@@ -282,7 +349,11 @@ label {
     grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr;
   }
 
-  .content-wrap, .contact-wrapper {
+  .tag-wrap, .contact-wrapper {
+    grid-column: 2/4;
+  }
+
+  .content-wrapper {
     grid-column: 2/4;
   }
 
@@ -301,9 +372,10 @@ label {
     width: 49%;
     padding: 2em;
     justify-content: space-around;
+    flex-grow: 1;
   }
 
-  #content-cards {
+  #content {
     width: 100%;
     background-color: white;
   }
@@ -313,7 +385,7 @@ label {
     justify-content: space-around;
   }
 
-  .content-wrap img {
+  .tag-wrap img {
     width: 400px;
   }
 
@@ -325,12 +397,20 @@ label {
     grid-column: 2/4;
   }
 
-  #nav a {
+  #nav-wrap {
     float: right;
+  }
+
+  #nav a, #nav a:focus {
     display: inline-block;
     clear: none;
     color: white;
     border-bottom: none;
+    text-decoration: none;
+  }
+
+  #nav a:visited {
+    color: white;
   }
 
   #nav {

@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>The Ashanti Foundation</title>
+  <title>The Ashanti Foundation - Home</title>
 </head>
 <body>
 
@@ -22,35 +24,36 @@
   <!--Nav Content-->
   <div id="nav" class="grid">
     <img src="images/logov4.png" alt="">
-    <label for="toggle">&#9776;</label>
-    <input type="checkbox" id="toggle" />
+    <label class="hamburger" for="toggle">&#9776;</label>
+    <input id="toggle" type="checkbox" />
+
     <div class="menu">
       <div id="nav-wrap">
         <a href="#top">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#portfolio">Donate</a>
-        <a href="scholarships.html">Scholarships</a>
+        <a href="#about-mark">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="donate.html">Donate</a>
       </div>
     </div>
   </div>
 
-  <!--Main Content-->
+  <!--Header Main Content-->
   <main id="main">
-    <section id="main-content" class="grid">
-      <div class="content-wrap">
+    <section id="tag-content" class="grid">
+      <div class="tag-wrap">
         <h2 id="content-tag">“Though she be but little, she is fierce”<br>(5/13/1998 – 9/29/2017)</h2>
       </div>
     </section>
 
-    <!--Content Cards-->
-    <section id="content-cards" class="grid">
+    <!--Content-->
+    <section id="content" class="grid">
       <div class="card-wrapper">
           <div class="card">
             <div class="card-content">
               <div class="service-info">
                 <div class="card-image">
-                  <img src="images/stock-support.jpg" alt="" />
+                  <a href="kits.html"><img src="images/stock-support.jpg" alt="" /></a>
                 </div>
                 <h3 class="card-title">Support</h3>
                 <p>The Ashanti Foundation looks to provide support and information to the
@@ -63,9 +66,9 @@
             <div class="card-content">
               <div class="service-info">
                 <div class="card-image">
-                  <img src="images/stock-prevention.jpg" alt="" />
+                  <a href="seminars.html"><img src="images/stock-prevention.jpg" alt="" /></a>
                 </div>
-                <h3 class="card-title">Prevention</h3>
+                <h3 class="card-title">Prevention & Seminars</h3>
                 <p>The Ashanti Foundation's preventive services will include fingerprinting and information kits
                   for both kids and parents, self-defense classes, and self-esteem,
                   depression, sexual-harassment and bullying awareness seminars.</p>
@@ -76,7 +79,7 @@
             <div class="card-content">
               <div class="service-info">
                 <div class="card-image">
-                  <img src="images/stock-scholarship.jpg" alt="" />
+                  <a href="scholarships.html"><img src="images/stock-scholarship.jpg" alt="" /></a>
                 </div>
                 <h3 class="card-title">Scholarships</h3>
                 <p>The Ashanti Foundation offers two partial scholarships
@@ -90,7 +93,7 @@
     </section>
 
     <!--About Ashanti Alert Content-->
-    <a id="about"></a>
+    <div id="about-mark"></a>
     <section id="about" class="grid">
       <div class="about-wrapper">
         <div class="about-content">
@@ -111,6 +114,9 @@
           <iframe src="https://www.youtube.com/embed/TqPDJapF9I0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <p>The Ashanti Alert Act of 2018 was passed into law on 12/31/2018. This act, named after Ashanti, is a national communication network alert system used
           to provide support for missing adults between the ages 18-64, ages which were not covered under the Amber Alert or the Silver Alert.</p>
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/breaking?src=hash&amp;ref_src=twsrc%5Etfw">#breaking</a> Had an emotional conversation w/Brandi Billie, mother of Ashanti &amp; spoke w/her father Meltony. Thank you <a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Etfw">@realDonaldTrump</a> for signing <a href="https://twitter.com/hashtag/ashantialert?src=hash&amp;ref_src=twsrc%5Etfw">#ashantialert</a> into law on this NYE. Out of this dark tragedy, light &amp; hope will come for families across country in 2019. <a href="https://twitter.com/MarkWarner?ref_src=twsrc%5Etfw">@MarkWarner</a> <a href="https://t.co/URsxPX49Eb">pic.twitter.com/URsxPX49Eb</a></p>&mdash; Scott Taylor (@Scotttaylorva) <a href="https://twitter.com/Scotttaylorva/status/1079889794115821569?ref_src=twsrc%5Etfw">December 31, 2018</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
         </div>
       </div>
     </section>
@@ -119,11 +125,14 @@
     <a id="contact"></a>
     <div class="contact-wrapper">
       <section id="contact-main" class="grid">
-      <h2 class="section-header">Contact</h2>
+      <h2 class="section-header">Send Us Your Ideas</h2>
       <p>The Ashanti Foundation<br>
         145 Fleet Street Unit #323<br>
         National Harbor, MD 20745<br>
-        (301)-201-1816</p>
+        <br />
+        To contact us through other means:<br />
+        <a href="contact.html"><strong>Contact Us</strong></a>
+      </p>
       </section>
     </div>
 
@@ -131,9 +140,18 @@
 
   <!--Footer Content-->
   <footer id="footer" class="grid">
+    <div id="social-foot">
+      <span>Follow Us on Social Media!</span><br />
+      <a href="https://facebook.com" class="fa fa-facebook"></a>
+      <a href="https://twitter.com" class="fa fa-twitter"></a>
+      <a href="https://instagram.com" class="fa fa-instagram"></a>
+      <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+      <a href="https://youtube.com" class="fa fa-youtube"></a>
+    </div>
     <div>&copy; Christopher Blackmon, 2018</div>
     <div>For project inquries email <a href="mailto:dr3amvillain@gmail.com?subject=feedback">dr3amvillain@gmail.com</a></div>
   </footer>
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
