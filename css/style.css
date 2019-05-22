@@ -48,7 +48,7 @@ p {
 
 #header .banner-image {
   position: absolute;
-  background: url("../images/placeholder-banner.png");
+  background: url("../images/placeholder-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,6 +83,10 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   height: 400px;
+}
+
+.image-header {
+  width: 95%;
 }
 
 #about .section-header {
@@ -130,6 +134,42 @@ p {
   margin: 10px auto 10px auto;
   padding-left: 2em;
   padding-right: 2em;
+  color: #225945;
+}
+
+.content-header a {
+  color: #225945;
+  text-decoration: none;
+}
+
+.content-header a:hover {
+  color: #225945;
+  opacity: 0.7;
+}
+
+.content-header a:visited {
+  color: #225945;
+}
+
+.sub-header {
+  margin: 25px auto 50px auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align-last: left;
+}
+
+.sub-header a {
+  color: #225945;
+  text-decoration: none;
+}
+
+.sub-header a:hover {
+  color: #225945;
+  opacity: 0.7;
+}
+
+.sub-header a:visited {
+  color: #225945;
 }
 
 .content-para {
@@ -137,6 +177,10 @@ p {
   padding-left: 2em;
   padding-right: 2em;
   text-align-last: left;
+}
+
+.content-lists {
+  list-style: none;
 }
 
 #donors {
@@ -198,7 +242,7 @@ p {
   text-align: center;
 }
 
-label {
+.hamburger {
   display: block;
   cursor: pointer;
   text-align: right;
@@ -311,7 +355,7 @@ footer a {
 }
 
 a:hover {
-  color white;
+  color: white;
 }
 
 footer a:visited {
@@ -319,7 +363,7 @@ footer a:visited {
 }
 
 #social-foot {
-  padding: 0, 1em, 1em, 0;
+  padding: 0 1em 1em 0;
 }
 
 #social-foot a {
@@ -338,6 +382,57 @@ footer a:visited {
 
 .fa:hover {
   opacity: 0.7;
+}
+
+/* Form Style */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+button {
+  background-color: #225945;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.form-label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  float: left;
+}
+
+.col-25, .col-75, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form-wrap {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 2em;
+}
+
+.error {
+  color: red;
 }
 
 /* Media Query */
@@ -367,6 +462,7 @@ footer a:visited {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    font-weight: 500;
   }
 
   .about-content {
@@ -374,6 +470,10 @@ footer a:visited {
     padding: 2em;
     justify-content: space-around;
     flex-grow: 1;
+  }
+
+  .about-content p {
+    font-weight: 500;
   }
 
   #content {
@@ -428,5 +528,23 @@ footer a:visited {
 
   #toggle {
     display: none;
+  }
+
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+button {
+    width: auto;
   }
 }
